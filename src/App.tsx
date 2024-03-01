@@ -1,14 +1,15 @@
 import "./App.css";
-import { Container } from "react-bootstrap";
-import WeatherData from "./components/WeatherData";
+import NavBar from "./components/NavBar";
+import WeatherCard from "./components/WeatherCard";
 
 const App = () => {
   return (
-    <Container className="flex p-3 w-full h-full align-centre items-center justify-center align-middle">
-      <Container className="flex flex-col p-5 mb-4 bg-light rounded-3 justify-center w-1/4 h-1/4">
-        <WeatherData />
-      </Container>
-    </Container>
+    <div className="flex flex-col h-screen">
+      <NavBar />
+      <div className="flex flex-1 overflow-auto flex-col items-center align-middle justify-center  h-full w-full">
+        <WeatherCard />
+      </div>
+    </div>
   );
 };
 
