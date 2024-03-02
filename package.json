@@ -1,8 +1,10 @@
 {
-  "name": "my-react-app",
+  "name": "sample-react-app",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "author": "Lucian Duta",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
