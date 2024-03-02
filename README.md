@@ -20,10 +20,10 @@ Before you begin, ensure you have the following installed:
 
 To set up the project locally, follow these steps:
 
-1. Clone the repository:
+1. **Open in Codespaces** or clone repository:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/CDT-UEL/sample-react-app
    cd sample-react-app
    ```
 
@@ -48,31 +48,31 @@ The frontend app is designed to work with the `weather_API` built in week 3 with
 1. Open the [weather_api](https://github.com/lucian-duta/weather_api) in Codespaces or locally.
 2. Run the following command in the terminal to install cors:
 
-```bash
-  npm install cors
-```
+   ```bash
+     npm install cors
+   ```
 
 2. Enable CORS in your Express application by adding the following to your `server.ts`:
 
-```typescript
-import cors from "cors";
-
-app.use(cors());
-```
+   ```typescript
+   import cors from "cors";
+   
+   app.use(cors());
+   ```
 
 3. Ensure the backend server is running and accessible by running:
 
-```bash
-npm run build
-
-npm run start
-```
+   ```bash
+   npm run build
+   
+   npm run start
+   ```
 
 4. Modify the frontend app's API request URLs to point to **your** weather API endpoints. In the `src/api/actions.ts` file, update the `API_URL` to your server's address:
 
-```typescript
-API_URL = "http://localhost:5000";
-```
+   ```typescript
+   API_URL = "http://localhost:5000";
+   ```
 
 ## Weather API Documentation
 
